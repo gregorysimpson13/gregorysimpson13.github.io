@@ -1,0 +1,22 @@
+{
+  "name": "gregorysimpson13.github.io",
+  "version": "1.0.0",
+  "description": "Personal Page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o ../css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregorysimpson13/gregorysimpson13.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregorysimpson13/gregorysimpson13.github.io/issues"
+  },
+  "homepage": "https://github.com/gregorysimpson13/gregorysimpson13.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

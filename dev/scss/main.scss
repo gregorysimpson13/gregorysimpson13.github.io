@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis');
+@import 'config';
+@import 'utilities';
+
+// General Styles
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%
+}
+
+#logo {
+    width: 7px;
+    height: 7px;
+    color: $light-color;
+    text-transform: uppercase;
+}
+
+// Main Nav
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 1rem 1.5rem;
+    }
+    a {
+        text-decoration: none;
+        color: $light-color;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $medium-color;
+        }
+        &.current {
+            border-color: $main-color;
+        }
+    }
+}
+
+// header
+#header {
+    &-home {
+        background: $bg-image no-repeat center right / cover;
+        height: 100vh; // whole page
+        color: $light-color;
+
+        .header-content {
+            text-align: center;
+            padding-top: 20%
+    
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+    }
+    
+    // Header Inner
+    &-inner {
+        display: none;
+    }
+}
+
+#home {
+    // home section a
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+
+            .fas {
+                color: $main-color;
+                padding-bottom: 0.4rem;
+            }
+        }
+    }
+    // home section b
+    &-b {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                line-height: 2;
+
+                &.stats-title{
+                    font-size: 1.5rem;
+                }
+
+                &.stats-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                padding: 3rem 0;
+
+                &:nth-child(odd) {
+                    background: $light-color;
+                }
+                &:nth-child(even) {
+                    background: $medium-color;
+                }
+            }
+        }
+    }
+
+    // Home Section C
+    &-c {
+        .process {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+
+            &-step {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 28px;
+                background: $main-color;
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+                color: set-text-color($main-color)
+            }
+
+            // process icon
+            &-icon {
+                border-radius: 50%;
+                background: $dark-color;
+                color: $light-color;
+                padding: 2rem;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+
+                &:hover { 
+                    background: $main-color;
+                    width: 90px;
+                    height: 90px;
+                    line-height: 90px;
+
+                    .process-step {
+                        background: $dark-color;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    &-d {
+        li {
+            display: inline-block;
+            margin: 0 2rem;
+            padding: 1rem;
+            border: 2px solid $dark-color;
+            background: $main-color;
+            font-weight: bolder;
+            border-radius: 20%;
+        }
+        .miniBar {
+            height: 3rem;
+            border: 1px solid #8a898a;
+            position: relative;
+            width: -webkit-calc(100% - 2rem);
+            width: -moz-calc(100% - 2rem);
+            width: calc(100% - 2rem);
+            margin-right: 0.5rem;
+        
+            &Progress1 {
+                background-color: $dark-color;
+                height: 100%;
+                position: absolute;
+                top: 0rem;
+                left: 0rem;
+                width: 75%;
+                h3 {
+                    line-height: 2.5;
+                    color: set-text-color($main-color);
+                }
+              }
+        
+            &Progress2 {
+                background-color: $main-color;
+                height: 100%;
+                position: absolute;
+                top: 0rem;
+                left: 75%;
+                width: 25%;
+                h3 {
+                    line-height: 2.5;
+                    color: $dark-color;
+                }
+              }
+        
+              &Progress3 {
+                background-color: $main-color;
+                height: 100%;
+                position: absolute;
+                top: 0rem;
+                left: 0;
+                width: 50%;
+                h3 {
+                    line-height: 2.5;
+                    color: $dark-color;
+                    }
+              } 
+          }
+    }
+}
+
+#main-footer {
+    background: $dark-color;
+    color: $light-color;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+        
+        .social .fab {
+            opacity: 1;
+            margin-right: 1rem;
+            border: 2px $light-color solid;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            padding: 0.5rem;
+            color: $light-color;
+
+            &:hover {
+                background: $main-color;
+            }
+        }
+    }
+}
+
+
+
+  
+  
+  
+  
