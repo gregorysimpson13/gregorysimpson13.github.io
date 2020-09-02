@@ -80,7 +80,7 @@ input[class^='btn-']:hover {
   padding: 0; }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.6; }
 
 a {
@@ -90,7 +90,9 @@ a {
 ul {
   list-style: none; }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase; }
 
 img {
@@ -200,7 +202,7 @@ img {
 
 #home-d li {
   display: inline-block;
-  margin: 0 2rem;
+  margin: 1rem 2rem;
   padding: 1rem;
   border: 2px solid #333;
   background: #e76f51;
