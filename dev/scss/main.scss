@@ -86,7 +86,9 @@ img {
 
   // Header Inner
   &-inner {
-    display: none;
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem; // whole page
+    border-bottom: 3px solid $main-color;
   }
 }
 

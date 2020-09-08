@@ -14,7 +14,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #e76f51; }
+  background-color: #4169e1; }
 
 .btn-light {
   color: #333;
@@ -27,7 +27,7 @@
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-  background-color: #e76f51; }
+  background-color: #4169e1; }
 
 .lead {
   font-size: 1.3rem;
@@ -71,7 +71,7 @@ input[class^='btn-']:hover {
 .bottom-line {
   height: 2px;
   width: 7rem;
-  background: #e76f51;
+  background: #4169e1;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -122,7 +122,7 @@ img {
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #e76f51; }
+      border-color: #4169e1; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
@@ -135,7 +135,9 @@ img {
       padding-top-line-height: 1.2; }
 
 #header-inner {
-  display: none; }
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #4169e1; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -143,7 +145,7 @@ img {
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
   #home-a .specials .fas {
-    color: #e76f51;
+    color: #4169e1;
     padding-bottom: 0.4rem; }
 
 #home-b .stats {
@@ -173,7 +175,7 @@ img {
     top: 0;
     right: 0;
     font-size: 28px;
-    background: #e76f51;
+    background: #4169e1;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -193,7 +195,7 @@ img {
     position: relative;
     transition: all 1s; }
     #home-c .process-icon:hover {
-      background: #e76f51;
+      background: #4169e1;
       width: 90px;
       height: 90px;
       line-height: 90px; }
@@ -205,7 +207,7 @@ img {
   margin: 1rem 2rem;
   padding: 1rem;
   border: 2px solid #333;
-  background: #e76f51;
+  background: #4169e1;
   font-weight: bolder;
   border-radius: 20%; }
 
@@ -228,7 +230,7 @@ img {
       line-height: 2.5;
       color: #fff; }
   #home-d .miniBarProgress2 {
-    background-color: #e76f51;
+    background-color: #4169e1;
     height: 100%;
     position: absolute;
     top: 0rem;
@@ -238,7 +240,7 @@ img {
       line-height: 2.5;
       color: #333; }
   #home-d .miniBarProgress3 {
-    background-color: #e76f51;
+    background-color: #4169e1;
     height: 100%;
     position: absolute;
     top: 0rem;
@@ -269,4 +271,4 @@ img {
       padding: 0.5rem;
       color: #f4f4f4; }
       #main-footer .footer-content .social .fab:hover {
-        background: #e76f51; }
+        background: #4169e1; }
